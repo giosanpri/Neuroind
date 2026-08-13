@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posgrados en Neuropsicología | Universidad de San Buenaventura Bogotá</title>
+  <meta name="description" content="Plan de estudios dinámico de la Especialización en Evaluación y Diagnóstico Neuropsicológico (28 créditos) y Maestría en Neuropsicología Clínica (52 créditos) de la Universidad de San Buenaventura Bogotá.">
+  
+  <!-- Estilos y Fuentes -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVBAR
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="brand-wrapper">
+        <div class="brand-seal">
+          <img src="assets/tau_cross.png" alt="Símbolo Tau Franciscan USB">
+        </div>
+        <div class="brand-info">
+          <h1>UNIVERSIDAD DE SAN BUENAVENTURA</h1>
+          <span>BOGOTÁ • FACULTAD DE PSICOLOGÍA</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#plan-estudios">Plan de Estudios</a></li>
+          <li><a href="#practicas">Prácticas Supervisadas</a></li>
+          <li><a href="#campus">Campus & CAP</a></li>
+          <li><a href="#contacto">Contacto Directo</a></li>
+        </ul>
+      </nav>
+
+      <div class="badge-quality">
+        Alta Calidad Multicampus
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🧠 Posgrados de Excelencia en Neuropsicología</span>
+        </div>
+        <h1 class="hero-title">
+          Plan de Estudios <span>Neuropsicología</span> USB
+        </h1>
+        <p class="hero-description">
+          Descubre un mapa curricular dinámico articulado entre la <strong>Especialización en Evaluación y Diagnóstico Neuropsicológico (28 Créditos)</strong> y la <strong>Maestría en Neuropsicología Clínica (52 Créditos)</strong> con formación práctica directa en nuestro CAP Fray Eloy Londoño.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">28 <span style="font-size: 1rem;">CR</span></div>
+            <div class="stat-label">Especialización (1 Año)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">52 <span style="font-size: 1rem;">CR</span></div>
+            <div class="stat-label">Maestría (2 Años)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Práctica Supervisada</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#plan-estudios" class="btn-primary">
+            <span>Explorar Plan de Estudios</span> ➔
+          </a>
+          <a href="#practicas" class="btn-secondary">
+            Ver Prácticas Clínicas
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card-main">
+          <img src="assets/hero_bg.jpg" alt="Campus Universidad de San Buenaventura Bogotá">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN DEL PLAN DE ESTUDIOS INTERACTIVO (SLIDE 11 MEJORADO)
+       ========================================================================== -->
+  <section class="curriculum-section" id="plan-estudios">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Gráfico Dinámico e Interactivo</span>
+        <h2 class="section-title">Plan de Estudios e Itinerario de Créditos</h2>
+        <p class="section-subtitle">
+          Selecciona el programa académico para visualizar la distribución de materias por semestre. Haz clic en cualquier asignatura o círculo de crédito para explorar sus competencias.
+        </p>
+      </div>
+
+      <!-- Selector de Programa (Especialización vs Maestría) -->
+      <div class="program-toggle-wrapper">
+        <div class="program-toggle">
+          <button class="toggle-btn" id="btn-especializacion">
+            <span>Especialización en Evaluación y Diagnóstico</span>
+            <span class="badge-cr">28 Créditos</span>
+          </button>
+          <button class="toggle-btn active" id="btn-maestria">
+            <span>Maestría en Neuropsicología Clínica</span>
+            <span class="badge-cr">52 Créditos</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filtro por Áreas de Conocimiento -->
+      <div class="area-filter-bar">
+        <button class="area-chip active" data-area="all">Todas las Áreas</button>
+        <button class="area-chip" data-area="teorica"><span class="area-dot dot-teorica"></span> Fundamentación</button>
+        <button class="area-chip" data-area="diagnostico"><span class="area-dot dot-diagnostico"></span> Diagnóstico</button>
+        <button class="area-chip" data-area="investigacion"><span class="area-dot dot-investigacion"></span> Investigación</button>
+        <button class="area-chip" data-area="rehabilitacion"><span class="area-dot dot-rehabilitacion"></span> Rehabilitación</button>
+        <button class="area-chip" data-area="practica"><span class="area-dot dot-practica"></span> Práctica Supervisada</button>
+        <button class="area-chip" data-area="casos"><span class="area-dot dot-casos"></span> Integración de Casos</button>
+      </div>
+
+      <!-- Grafo Interactivo de Créditos y Semestres -->
+      <div class="curriculum-grid" id="curriculum-grid">
+        <!-- Generado dinámicamente por app.js -->
+      </div>
+
+      <!-- Asignaturas Transversales Destacadas -->
+      <div class="transversal-strip">
+        <div class="transversal-box">
+          <div class="transversal-icon">📋</div>
+          <div>
+            <h4 style="color: #FFF; font-size: 1rem;">Seminario de Casos (Transversal)</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Presentación e integración clínica continua a lo largo de todos los semestres del posgrado (1 CR en S1, S2, S3 y 2 CR en S4).</p>
+          </div>
+        </div>
+        <div class="transversal-box">
+          <div class="transversal-icon">🏥</div>
+          <div>
+            <h4 style="color: #FFF; font-size: 1rem;">Práctica Profesional Supervisada</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Inmersión clínica progresiva en el CAP Fray Eloy Londoño (3 CR en S1 y S2; 2 CR en S3 y S4).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Flotante Simulador de Créditos Acumulados -->
+      <div class="credit-simulator-bar">
+        <div class="sim-info">
+          <div class="sim-icon">📊</div>
+          <div>
+            <div class="sim-title" id="sim-program-name">Maestría en Neuropsicología Clínica</div>
+            <div class="sim-subtitle">Plan Curricular Completo Aprobado</div>
+          </div>
+        </div>
+
+        <div class="sim-progress-wrapper">
+          <div class="sim-progress-labels">
+            <span>Progreso de Créditos Académicos</span>
+            <span id="sim-target-credits">52 Créditos</span>
+          </div>
+          <div class="sim-progress-track">
+            <div class="sim-progress-fill" id="sim-fill-bar"></div>
+          </div>
+        </div>
+
+        <div class="sim-badge-total" id="sim-total-badge">
+          52 CR
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN DE PRÁCTICAS PROFESIONALES SUPERVISADAS
+       ========================================================================== -->
+  <section class="practices-section" id="practicas">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Ruta de Formación Clínica</span>
+        <h2 class="section-title">Prácticas Profesionales Supervisadas</h2>
+        <p class="section-subtitle">
+          Evolución del nivel de autonomía clínica del estudiante desde el diagnóstico observacional hasta la intervención rehabilitadora avanzada.
+        </p>
+      </div>
+
+      <div class="practices-timeline">
+        <div class="practice-card">
+          <span class="practice-badge-sem">Primer Semestre (3 Créditos)</span>
+          <h3 class="practice-title">Diagnóstico e Inmersión Guiada</h3>
+          <ul class="practice-list">
+            <li>Observador activo en las evaluaciones neuropsicológicas clínicas.</li>
+            <li>Entrevistas neuropsicológicas guiadas a independientes.</li>
+            <li>Aplicación de pruebas y baterías neuropsicológicas estandarizadas.</li>
+            <li>Dominio del discurso clínico neuropsicológico verbal y escrito.</li>
+            <li>Entrega de reportes de evaluación y presentación de casos.</li>
+          </ul>
+        </div>
+
+        <div class="practice-card">
+          <span class="practice-badge-sem">Segundo Semestre (3 Créditos)</span>
+          <h3 class="practice-title">Evaluación Autónoma e Informe</h3>
+          <ul class="practice-list">
+            <li>Conducción independiente de entrevistas neuropsicológicas.</li>
+            <li>Proceso completo de evaluación con aprobación del supervisor.</li>
+            <li>Elaboración de perfiles e informes neuropsicológicos integrales.</li>
+            <li>Entrega directa de resultados al paciente y familiares.</li>
+            <li>Identificación y desarrollo del Estudio de Caso para Especialista.</li>
+          </ul>
+        </div>
+
+        <div class="practice-card">
+          <span class="practice-badge-sem">Tercer y Cuarto Semestre (4 Créditos)</span>
+          <h3 class="practice-title">Intervención y Rehabilitación</h3>
+          <ul class="practice-list">
+            <li>Evaluación clínica autónoma de alta complejidad.</li>
+            <li>Diseño e implementación de planes de rehabilitación individualizados.</li>
+            <li>Seguimiento directo al plan de intervención implementado.</li>
+            <li>Fundamentación teórica de propuestas de restitución/compensación.</li>
+            <li>Liderazgo en equipos interdisciplinarios en salud.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN DE CAMPUS & CAP
+       ========================================================================== -->
+  <section class="practices-section" id="campus">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Infraestructura de Vanguardia</span>
+        <h2 class="section-title">CAP Fray Eloy Londoño y Campus USB</h2>
+        <p class="section-subtitle">
+          Instalaciones modernas diseñadas para la atención asistencial, la investigación neuropsicológica y la docencia práctica.
+        </p>
+      </div>
+
+      <div class="campus-grid">
+        <div class="campus-image-box">
+          <img id="campus-main-img" src="assets/campus_map.png" alt="Mapa de Edificios Campus USB Bogotá Completo">
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; justify-content: center;">
+            <button class="area-chip active" style="font-size: 0.75rem; padding: 0.35rem 0.85rem;" onclick="switchCampusImg('assets/campus_map.png', this)">🗺️ Mapa Completo Edificios</button>
+            <button class="area-chip" style="font-size: 0.75rem; padding: 0.35rem 0.85rem;" onclick="switchCampusImg('assets/campus_aerial_hd.jpg', this)">🚁 Vista Aérea HD</button>
+            <button class="area-chip" style="font-size: 0.75rem; padding: 0.35rem 0.85rem;" onclick="switchCampusImg('assets/cap_center.jpeg', this)">🏥 Centro CAP</button>
+          </div>
+        </div>
+
+        <div class="campus-info-card">
+          <h3 style="font-size: 1.6rem; color: #FFF; margin-bottom: 1rem;">Centro de Atención Psicológica (CAP)</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+            El CAP Fray Eloy Londoño es el centro asistencial docente universitario donde nuestros estudiantes de posgrado realizan la atención clínica supervisada a pacientes con diversas patologías neurológicas y del neurodesarrollo.
+          </p>
+
+          <h4 style="color: var(--usb-orange-bright); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Edificios de Pregrado y Posgrado</h4>
+          <div class="campus-building-list">
+            <div class="building-item">🏛️ Guillermo de Ockham</div>
+            <div class="building-item">🏛️ Diego Barroso</div>
+            <div class="building-item">🏛️ Duns Scotto</div>
+            <div class="building-item">🏛️ Pedro Simón</div>
+            <div class="building-item">🔬 Laboratorio Psicología</div>
+            <div class="building-item">☕ Cafetería & Plazas</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DIRECTORIO DE CONTACTOS
+       ========================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Atención Personalizada</span>
+        <h2 class="section-title">Directorio de la Facultad y Posgrados</h2>
+        <p class="section-subtitle">
+          Comunícate directamente con la Dirección de Posgrados, Coordinación de Prácticas, CAP e Investigación.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Dirección Posgrados Neuropsicología</div>
+            <h3 class="contact-name">Lorena Alejandra Lucero</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('Psi.neuropsicologia@usbbog.edu.co')">
+            <span>Psi.neuropsicologia@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Analista Facultad de Psicología</div>
+            <h3 class="contact-name">Milena Velásquez</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('psi.analista@usbbog.edu.co')">
+            <span>psi.analista@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Coordinación CAP Fray Eloy Londoño</div>
+            <h3 class="contact-name">Laura Quintero</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('cap.coordinador@usbbog.edu.co')">
+            <span>cap.coordinador@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Coordinación de Prácticas</div>
+            <h3 class="contact-name">Juliana Méndez</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('psi.coordpracticas@usbbog.edu.co')">
+            <span>psi.coordpracticas@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Coordinación de Autoevaluación</div>
+            <h3 class="contact-name">Julián Becerra</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('psi.coordautoevalua@usbbog.edu.co')">
+            <span>psi.coordautoevalua@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-role">Coordinación de Investigación</div>
+            <h3 class="contact-name">Douglas Mauricio Bastidas</h3>
+          </div>
+          <button class="contact-email-btn" onclick="copyEmail('psi.coordinvestigaciones@usbbog.edu.co')">
+            <span>psi.coordinvestigaciones@usbbog.edu.co</span>
+            <span>📋</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL DE DETALLE DE ASIGNATURA
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      
+      <div class="modal-header-badge">
+        <span class="badge-quality" id="modal-course-area">Diagnóstico</span>
+        <span style="color: var(--usb-orange-bright); font-weight: 700; font-size: 0.85rem;" id="modal-course-semester">Semestre 1</span>
+      </div>
+
+      <h2 class="modal-title" id="modal-course-name">Nombre de Asignatura</h2>
+      <p class="modal-body" id="modal-course-description">
+        Descripción detallada de la asignatura.
+      </p>
+
+      <div class="modal-info-grid">
+        <div class="modal-info-item">
+          <label>Créditos Académicos</label>
+          <span id="modal-course-credits">4 Créditos</span>
+        </div>
+        <div class="modal-info-item">
+          <label>Competencias Clave</label>
+          <span id="modal-course-competencies">Comprensión teórica y clínica.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Universidad de San Buenaventura Bogotá</strong> • Facultad de Psicología</p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-muted);">Posgrados en Neuropsicología (Especialización R.C. Mayo 2022 | Maestría R.C. Abril 2017)</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
